@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Mayer, List, Terhalle, Urban - An Interactive Visualization of Crosslinguistic 
+    Colexification Patterns</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations 
+    using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + 
+      ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
+      '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+        
+        <div class="slide-number"></div>
+        <div class="footer-uni">
+            <center>
+            <table border="0">
+            <tr>
+            <td valign="center"><img src="img/PhUniMa_Logo_w.png" height="40"></td>
+            <td valign="center"><img src="img/uni-due.png" height="60"></td>
+            <td valign="center"><img src="img/leiden.png" height="60"></td>
+                <td width="20px">&nbsp;</td>
+                <td width="450px" align="center"><p style="font-family:Helvetica,
+                sans-serif;font-size: 11pt; font-weight:lighter;">
+                Mayer, List, Terhalle, Urban <br>An Interactive Visualization of Crosslinguistic 
+    Colexification Patterns</p></td>
+                <td width="20px">&nbsp;</td>
+            <td valign="center"><img src="img/dfg_logo_schriftzug_weiss.png" height="20"></td>
+            <td valign="center"><img src="img/logo_erc.png" height="60"></td>
+            </tr>
+            </table>
+            </center>
+        </div>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+                
+                
+
+        <section>
+                    
+                    
+          <h1 style='font-size:1.5em;'>An Interactive Visualization of <br>Crosslinguistic 
+                    Colexification Patterns
+                    <br><br><small>
+                    VisLR Workshop - Visualization as added value <br> in the development, use and 
+                    evaluation of LRs <br>
+                    LREC 2014, Reykjavik</small></p>
+          <p>
+            <small style="font-size: 50%;">
+            <a href="http://th-mayer.de">Thomas Mayer</a> / 
+        <a href="mailto:thomas.mayer@uni-marburg.de">thomas.mayer@uni-marburg.de</a>
+        <br>
+            <a href="http://lingulist.de">Johann-Mattis List</a> / 
+        <a href="mailto:mattis.list@uni-marburg.de">mattis.list@uni-marburg.de</a>
+        <br>
+            <a href="https://www.phil-fak.uni-duesseldorf.de/rom2/equipe/anselm-terhalle/">Anselm Terhalle</a> / 
+        <a href="mailto:terhalle@phil.uni-duesseldorf.de">terhalle@phil.uni-duesseldorf.de</a>
+        <br>
+            <a href="http://www.hum.leiden.edu/lucl/organisation/members/urbanm.html">Matthias Urban</a> / 
+        <a href="mailto:m.urban@hum.leidenuniv.nl">m.urban@hum.leidenuniv.nl</a>
+        
+            </small>
+          </p>
+                    
+        </section>
+        
+        <section>
+                    <h2>Overview</h2>
+                    
+                    <div class="textbox">
+                    <ol style="zoom: 130%;">
+                    <li><a href="#/introduction/">Introducing CLICS</a></li>
+                    <li><a href="#/visualization/">Visualization</a></li>
+                    <li><a href="#/casestudies/">Case studies</a></li>
+                    <li><a href="#/conclusions/">Conclusions and future work</a></li>
+                    </ol>
+                    </div>
+                
+                </section>
+        
+        <section id="introduction">
+                    <h2>Part I: Introduction</h2>
+                
+                </section>
+                <section>
+		  <h3>Polysemy, Homophony,<br> and Colexification</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+                      <ul>
+                        <li>
+                          <b>Polysemy:</b> If a word has two or more meanings which are
+			  historically related.
+                        </li>
+                        <li>
+                          <b>Homophony:</b> If two words which do not share a common etymological
+			  history have an identical pronunciation.
+                        </li>
+                        <li>
+                          <b>Colexification:</b> If one word form denotes several meanings.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section>
+		  <h3>Polysemy, Homophony, <br> and Colexification</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+                      <ul>
+                        <li>
+			<b>Polysemy:</b> English <em>wood</em> 'forest; wood (material)'
+                        </li>
+                        <li>
+			<b>Homophony:</b> German <em>Arm</em> 'arm' vs. German <em>arm</em> 'poor'
+                        </li>
+                        <li>
+			<b>Colexification:</b> English <em>wood</em>, German <em>Arm/arm</em>, etc.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Cross-Linguistic Colexifications</h3>
+		  <div class="textbox">
+		    <table>
+		      <tr>
+			<th> Key   </th><th> Concept      </th><th> Russian   </th><th> German
+			</th><th> ... </th>
+		      </tr>
+		      <tr>
+			<td> 1.1   </td><td> world        </td><td> mir, svet </td><td> Welt        </td><td> ...</td>
+		      </tr>
+		      <tr>
+			<td> 1.21  </td><td> earth, land  </td><td> zemlja    </td>
+			<td> <span style="background-color:Crimson">Erde</span>, Land  </td><td> ...</td>
+		      </tr>
+		      <tr>
+			<td> 1.212 </td><td> ground, soil </td><td> počva     </td>
+			<td> <span style="background-color:Crimson">Erde</span>, Boden </td><td> ...</td>
+		      </tr>
+		      <tr>
+			<td> 1.420 </td><td> tree         </td>
+			<td> <span style="background-color:CornflowerBlue">derevo</span>    </td><td> Baum        </td><td> ...</td>
+		      </tr>
+		      <tr>
+			<td> 1.430 </td><td> wood         </td>
+			<td> <span style="background-color:CornflowerBlue">derevo</span>    </td><td> Holz        </td><td> ...</td>
+		      </tr>
+		    </table>
+		  </div>
+                </section>
+                <section>
+                  <h3>CLICS</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+                      <ul>
+                        <li>
+                          CLICS offers information on colexification in 221 different languages.
+                        </li>
+                        <li>
+                          301,498 words covering 1,280 different concepts
+                        </li>
+                        <li>
+                          45,667 cases of colexification, identified with help of a strictly automatic procedure, correspond to 16,239 different links between the 1,280 concepts in CLICS
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </section>
+                <section><h3>Sources of CLICS</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+                        <ul>
+                          <li>IDS (Key and Comrie 2007): 178 languages</li>
+                          <li>WOLD (Haspelmath & Tadmor 2009): 33 languages</li>
+                          <li>LOGOS (http://www.logosdictionary.org): 4 languages</li>
+                          <li>Språkbanken (University of Gothenburg): 6 languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                </section>
+                <section><h3>Network Modeling of CLICS</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+		      Network modeling of CLICS is pretty simple:
+                      <ul>
+                        <li>
+			  Concepts are represented as <em>nodes</em> in our network.
+                        </li>
+                        <li>
+			  Instances of colexification in the languages of CLICS are represented as
+			  <em>links</em> between the nodes (we link the concept 'poor' with the concept 'arm'
+			    since German colexifies both concepts). 
+                        </li>
+                        <li>
+			<em>Edge weights</em> in the network reflect the number of attested
+			  instances of a given colexification or the number of languages or language
+			  families in which the colexification occured.  
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Network Modeling of CLICS</h3>
+                        <img src="img/clics.png" height="550">
+                </section>
+		<section>
+                    <h3>Complete network of CLICS</h3>
+                        <img src="img/completeNetworkLabels.jpg" height="550">
+                </section>
+		<section>
+		  <h3>Communities of CLICS</h3>
+                  <div class="textbox">
+                    <div style="margin-top: 10px;">
+		      Since the resulting network is very, very dense, we try to break it down to
+		      smaller interesting pieces by:
+		      <ul>
+			<li>using algorithms for <em>community identification</em> which break down
+			the networks to small groups in which the number of links within the group is higher
+			than the number of links outside the group (<em>INFOMAP algorithm</em>,
+			Rosvall and Bergstrom, 2008), or</li>
+			<li>extracting subgraphs from the network with a certain resolution
+			depth</li>
+		      </ul>
+		    </div>
+		  </div>
+		</section>
+                <section>
+                    <h3>Communities of CLICS</h3>
+                        <img src="img/clics_part.svg" height="550">
+
+                </section>
+
+
+                
+                <section id="visualization">
+                    <h2>Part II: Visualization</h2>
+                
+                </section>
+                
+                <section>
+                    <h3>Some advantages of <br>web-based visualizations</h3>
+                    <div>(cf. Murray 2010)</div>
+                    
+                    <div class="textbox">
+                        
+                        <div style="margin-top: 10px;">
+                        <ul>
+                            <li>Platform independent</li>
+                            <li>Accessible from any device with a browser supporting JavaScript</li>
+                            <li>No need to install additional software on the part of the user</li>
+                            <li>Links to external resources can be easily included</li>
+                        </ul>
+                        </div>
+                    </div>
+                
+                </section>
+                
+                <section>
+                
+                    <section>
+                        <h3>Interactive functionalities</h3>
+                        
+                        <div class="textbox">
+                            
+                            <div style="margin-top: 10px;">
+                            <ul>
+                                <li>Force-directed graph layout for communities</li>
+                                <ul>
+                                    <li>drag nodes to different positions where there is less overlap</li>
+                                    <li>panning and zooming</li>
+                                    <li>mouse over for more information on a certain node or edge</li>
+                                </ul>
+                                <li>World map showing all languages featured in a given colexification pattern</li>
+                                <li>Color coding for world regions</li>
+                            </ul>
+                            </div>
+                        </div>
+                    
+                    </section>
+                    
+                    
+                
+                </section>
+                
+                <section>
+                
+                    <section>
+                        <h3>Implementation</h3>
+                        
+                        <div class="textbox">
+                            <ul>
+                                <li>The visualization is implemented in JavaScript using the D3 
+                                library (Bostock et al., 2011)</li>
+                                <li>The force-directed graph is generated with the <span class="ttt">force()</span> function 
+                                from the <span class="ttt">d3.layout module</span>.</li>
+                                <li>The layout implementation uses position Verlet integration for 
+                                simple constraints (Dwyer, 2009).</li>
+                                <li>The dragging and panning functionalities of the graph are 
+                                implemented with the <span class="ttt">drag()</span> function 
+                                from the <span class="ttt">d3.behavior</span> module 
+                                and the SVG transform and translate attributes.</li>
+                                
+                            </ul>
+                        </div>
+                    
+                    </section>
+                    
+                    <section>
+                        <h3>Implementation (cont'd)</h3>
+                        
+                        <div class="textbox">
+                            <ul>
+                                <li>The interactive world map is generated with the <span class="ttt">
+                                topojson</span> 
+                                package and makes use of the <span class="ttt">d3.geo</span>
+                                projection module.</li>
+                            </ul>
+                        </div>
+                    
+                    </section>
+                    
+                    <section>
+                        <h3>Color coding</h3>
+                        
+                        <div class="textbox">
+                        <ul>
+                        
+                        <li>The color values for the world map gradient scale are computed from the 
+                        two-dimensional geographical coordinates that are given as an input.</li>
+                        </ul>
+                        
+                        <pre><code>
+function cl2pix(c,l){
+    var TAU = 6.2831853
+    var L = l*0.61 + 0.09;
+    var angle = TAU/6.0 - c*TAU;
+    var r = l*0.311 + 0.125
+    var a = Math.sin(angle)*r;
+    var b = Math.cos(angle)*r;
+    return [L,a,b];
+};
+                        </code></pre>
+                        <small>The code was adapted from the GNU C code by David Dalrymple 
+                        (<a href="http://davidad.net/colorviz/" target="_blank">
+                        http://davidad.net/colorviz/</a>, accessed on January 25, 2014) 
+                        and translated into JavaScript.</small>
+                       
+                        
+                        </div>
+                    
+                    </section>
+                    
+                    <section>
+                        <h3>Color coding (cont'd)</h3>
+                        
+                        <div class="textbox">
+                        <ul>
+                        
+                         <ul>
+                          <li>The actual HTML color code is generated with the function <span class="ttt">
+                          d3.lab</span>
+                          from the D3 library, which takes the three values for [L,a,b] as input.</li>
+                          <li>The main reason for choosing the L*a*b* color space is a smoother 
+                          transition between different color hues without any visible boundaries.</li>
+                          <li>For the coloring of the language families, the background colors 
+                          are generated with the categorical scale functions of the 
+                          <span class="ttt">d3.scale</span> module.</li>
+                        </ul>
+                        
+                        </div>
+                    
+                    </section>
+                    
+                    <section>
+                
+                        <h3>HSV vs L*a*b color space</h3>
+                            <!--<img src="img/Lab_HSV2.png" height="550">-->
+                            <img src="img/hsv.png" height="550">
+                            <img src="img/lab.png" height="550">
+                    </section>
+                    
+                    <section>
+                
+                        <h3>Color scale</h3>
+                            <img src="img/ColorScaleWorld.png" height="550">
+                    </section>
+                    
+                </section>
+                
+                <section>
+                
+                    <section id="casestudies">
+                        <h2>Part III: Case studies</h2>
+                    
+                    </section>
+                    
+                    <section>
+                        <center>
+                            <iframe class="frame" src="http://clics.lingpy.org/access.php?gloss=money&view=part" 
+                            width="800" height="650"></iframe>
+                        </center>
+                    </section>
+                    
+                    <section>
+                        <center>
+                            <iframe class="frame" src="http://clics.lingpy.org/access.php?gloss=wheel&view=part" 
+                            width="800" height="650"></iframe>
+                        </center>
+                    </section>
+                    
+                    <section>
+                        <center>
+                            <iframe class="frame" src="http://clics.lingpy.org/access.php?gloss=weather" 
+                            width="800" height="650"></iframe>
+                        </center>
+                    </section>
+                    
+                </section>
+      
+                <section id="conclusions">
+                    <h2>Part III: Conclusions and future work</h2>
+                
+                </section>
+                
+                <section>
+                    <h3>Conclusions</h3>
+                    
+                    <div class="textbox">
+                    <ul>
+                        <li>The size and complexity of today’s LRs 
+                        call for a <span class="wichtig">data preparation pipeline</span> 
+                        that enables researchers
+                        to find meaningful patterns among the multitude of different 
+                        factors that can be taken into consideration.</li>
+                        <li>Such a data preparation pipeline necessarily consists of 
+                        <span class="wichtig">two major parts</span>:</li>
+                        <ol>
+                            <li>methods and techniques from <span class="wichtig">
+                            data mining or computational
+                            linguistics</span> help to detect basic trends or groups of 
+                            similar objects in the search space.</li>
+                            <li>the resulting groups or trends are <span class="wichtig">
+                            mapped to
+                            visual variables</span> in order to make interesting observations
+                            readily accessible to human perception.</li>
+                        </ol>
+                    </ul>
+                    </div>
+                
+                </section>
+                
+                <section>
+                    <h3>Future work</h3>
+                    
+                    <div class="textbox">
+                    <ul>
+                        <li>we plan to enhance the visualization tool with further 
+                        interactive components that allow for a <span class="wichtig">
+                        better overview of 
+                        the complete network of colexifications</span> and facilitate 
+                        the detection of genealogical or areal trends in the database.</li>
+                        <li>we intend to equip the user interface with further 
+                        interactive components that allow users to <span class="wichtig">
+                        explore the 
+                        database from different perspectives</span> (e.g., compare 
+                        individual languages in terms of shared lexical associations).
+                    </ul>
+                    </div>
+                
+                </section>
+                
+                <section>
+                    <h3>The CLICS website</h3>
+                    <div><a href="http://clics.lingpy.org" target="_blank">
+                    http://clics.lingpy.org</a></div>
+                    
+                    <div class="textbox">
+                    <ul>
+                        <li>Featuring all functionalities presented in this talk</li>
+                        <li>All communities and connections available as URLs</li>
+                        <li>Networks can be exported as SVG</li>
+                        <li>Featuring tabular representations for colexification patterns</li>
+                    </ul>
+                    </div>
+                
+                </section>
+
+        <section data-transition="zoom">
+          <h2>Thank you for your attention!</h2>
+          <div class="textbox" style="margin-top: 90px;">
+          <p>
+          <table border="0">
+          <tr><td width="350"><a href="http://th-mayer.de">Thomas Mayer</a> </td><td>
+        <a href="mailto:thomas.mayer@uni-marburg.de">thomas.mayer@uni-marburg.de</a>
+        </td></tr>
+        <tr><td>
+            <a href="http://lingulist.de">Johann-Mattis List</a></td><td>
+        <a href="mailto:mattis.list@uni-marburg.de">mattis.list@uni-marburg.de</a>
+        </td></tr>
+        <tr><td>
+            <a href="https://www.phil-fak.uni-duesseldorf.de/rom2/equipe/anselm-terhalle/">Anselm Terhalle</a> </td><td>
+        <a href="mailto:terhalle@phil.uni-duesseldorf.de">terhalle@phil.uni-duesseldorf.de</a>
+        </td></tr>
+        <tr><td>
+            <a href="http://www.hum.leiden.edu/lucl/organisation/members/urbanm.html">Matthias Urban</a> </td><td>
+        <a href="mailto:m.urban@hum.leidenuniv.nl">m.urban@hum.leidenuniv.nl</a>
+        </td></tr>
+        </table>
+        </p>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: 'thommy',//Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+        
+        <!-- From https://github.com/hakimel/reveal.js/pull/56#issuecomment-17470394 -->
+        <script>
+            var slideNumber = document.querySelector('.slide-number');
+            var updateSlideNumber = function(event) {
+                var textContent = event.indexh;
+                if (event.indexv > 0) {
+                    textContent += '-' + event.indexv;
+                }
+                if (event.indexh > 0) {
+                    slideNumber.textContent = textContent;
+                }
+            }
+
+            Reveal.addEventListener('ready', updateSlideNumber);
+            Reveal.addEventListener('slidechanged', updateSlideNumber);
+        </script>
+        
+
+  </body>
+</html>
